@@ -1,8 +1,11 @@
 <template lang="pug">
 VForm(ref="form" :model="user" @submit.prevent="onSubmit()")
+  .text-center.mb-5
+    h1.text-h4 Railgun
+    span.text-h6 A Vue/Gun/Electron starter app.
   VCard
     VCardText
-      h2 Sign up
+      h2.text-h5 Sign up
       VTextField(
         v-model="user.username"
         label="Username"
